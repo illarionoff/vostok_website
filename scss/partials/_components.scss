@@ -1,0 +1,16 @@
+nav .navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  z-index: 99;
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      margin: 10px 20px;
+    }
+  }
+}

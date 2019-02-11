@@ -1,0 +1,11 @@
+{
+  "name": "vostok",
+  "version": "1.0.0",
+  "description": "Vostok watch website redesign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Illarionov",
+  "license": "MIT"
+}
