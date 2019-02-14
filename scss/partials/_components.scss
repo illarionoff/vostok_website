@@ -1,4 +1,19 @@
-nav .navbar {
+nav {
+  .logo {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    z-index: 1000;
+
+    img {
+      margin: 10px 0 0 10px;
+      width: 75px;
+    }
+  }
+}
+.navbar {
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -6,6 +21,9 @@ nav .navbar {
   font-size: 14px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.199);
   z-index: 99;
+  a {
+    color: rgb(27, 27, 27);
+  }
   ul {
     display: flex;
     list-style: none;
@@ -13,4 +31,75 @@ nav .navbar {
       margin: 10px 20px;
     }
   }
+}
+
+button {
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px 30px;
+  &:active,
+  &:hover,
+  &:visited {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin: 25px 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin: 25px 0;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+h4 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 2;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  video {
+    width: 100%;
+  }
+}
+.fullscreen-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
 }

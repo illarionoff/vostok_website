@@ -1,54 +1,46 @@
 header {
   position: relative;
 
-  height: 600px;
+  height: 560px;
   @include flex;
+}
 
-  .logo {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100px;
-
-    img {
-      margin: 10px 0 0 10px;
-      width: 75px;
-    }
+.hero {
+  display: flex;
+  width: 80%;
+  a {
+    background: set-button-back-color(rgba(137, 143, 160, 0.685));
+    color: set-button-text-color(rgba(137, 143, 160, 0.685));
   }
 
-  .hero {
-    display: flex;
-    width: 80%;
+  &__content {
+    width: 40%;
+    background-color: #fff;
+    margin-left: -100px;
+    @include flex;
+  }
 
-    &__content {
-      width: 40%;
-      background-color: #fff;
-      margin-left: -100px;
-      @include flex;
-    }
+  &__headers {
+    background-color: aliceblue;
+    padding: 30px;
+    margin-left: -100px;
+  }
 
-    &__headers {
-      background-color: aliceblue;
-      padding: 50px;
-      margin-left: -100px;
-    }
+  &__title {
+    line-height: 1.5;
+    font-size: 36px;
+  }
 
-    &__title {
-      line-height: 1.5;
-      font-size: 36px;
-    }
+  &__subtitle {
+    line-height: 1.5;
+    font-size: 16px;
+  }
 
-    &__subtitle {
-      line-height: 1.5;
-      font-size: 16px;
-    }
+  &__image {
+    width: 60%;
 
-    &__image {
-      width: 60%;
-
-      img {
-        width: 100%;
-      }
+    img {
+      width: 100%;
     }
   }
 }
@@ -57,18 +49,8 @@ header {
   width: 100%;
   height: 400px;
   background: rgba(114, 113, 113, 0.199);
-  text-align: center;
-  padding: 100px;
-
-  h2 {
-    font-size: 24px;
-    line-height: 1.5;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
+  @include flex;
+  padding: 0 10%;
 }
 
 .legacy {
@@ -76,20 +58,14 @@ header {
   height: 400px;
   width: 80%;
   margin: 0 auto;
+  a {
+    background: set-button-back-color(rgba(137, 143, 160, 0.685));
+    color: set-button-text-color(rgba(137, 143, 160, 0.685));
+  }
 
   &__content {
     padding: 50px;
     width: 50%;
-
-    h2 {
-      font-size: 24px;
-      line-height: 1.5;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
   }
 
   &__image {
@@ -108,26 +84,13 @@ header {
   overflow: hidden;
   padding: 50px;
   text-align: center;
-
-  h2 {
-    font-size: 24px;
-    line-height: 1.5;
-  }
-
-  h3 {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
+  background: #fff;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 50px 0;
   }
 
   &__item {
@@ -140,35 +103,23 @@ header {
       width: 300px;
     }
   }
+  a {
+    background: set-button-back-color(#fff);
+    color: set-button-text-color(#fff);
+  }
 }
-
 .action {
   height: 600px;
-  background: linear-gradient(rgba(137, 143, 160, 0.685),
-    rgba(137, 143, 160, 0.685)), url('../img/bg-1.jpg');
+  position: relative;
+
   @include flex;
 
   button {
-    border: 0;
-    background: none;
-    text-transform: uppercase;
-
+    z-index: 20;
   }
-
   a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    background: #fff;
-    padding: 15px 30px;
-
-    &:active,
-    &:hover,
-    &:visited {
-      text-decoration: none;
-      outline: none;
-      color: black;
-    }
+    background: set-button-back-color(rgba(137, 143, 160, 0.685));
+    color: set-button-text-color(rgba(137, 143, 160, 0.685));
   }
 }
 
@@ -178,22 +129,12 @@ header {
   margin: 0 auto;
   justify-content: space-around;
   background: rgba(114, 113, 113, 0.199);
-  border-bottom: 1px solid rgba(114, 113, 113, 0.2);
 
   &__item {
-    padding: 20px 50px;
-
-    h3 {
-      font-size: 18px;
-      line-height: 1.5;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
+    border: 1px solid rgba(255, 255, 255, 0.205);
+    padding: 20px 20px;
+    width: 20%;
   }
-
 }
 
 footer {
@@ -207,6 +148,8 @@ footer {
     justify-content: center;
 
     &__icon {
+      font-size: 16px;
+      color: rgb(27, 27, 27);
       margin: 0 10px;
       @include flex;
     }

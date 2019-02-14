@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="img/logo-small.png" alt="" />
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class="nav-link"><a href="collections.html">Коллекция</a></li>
+          <li class="nav-link"><a href="/catalogue">Каталог</a></li>
+          <li class="nav-link"><a href="about.html">О нас</a></li>
+          <li class="nav-link"><a href="contacts.html">Связаться</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header__contacts">
+      <div class="fullscreen-image">
+        <img src="img/header-image-2.jpg" alt="" />
+      </div>
+      <div class="fullscreen-overlay"></div>
+      <h1>Связаться с нами</h1>
+    </header>
+
+    <section class="section__form">
+      <div class="container__address">
+        <div class="container__field">
+          <h3>Адрес: 422981, РТ, г.Чистополь, ул.Энгельса, 129Т, Н-2</h3>
+
+          <h4>Приемная:</h4>
+          <p>8(84342) 9-00-00; e-mail: zavod-vostok@mail.ru</p>
+
+          <h4>Отдел продаж:</h4>
+          <p>8(84342) 9-00-05; e-mail: rch5@mail.ru и rch6@mail.ru</p>
+          <h4>Отдел снабжения:</h4>
+          <p>8(84342) 4-40-79</p>
+          <h4>Гарантийная мастерская:</h4>
+          <p>8(84342) 9-00-15; e-mail: garant-vostok@inbox.ru</p>
+          <h4>Конструкторско-технологический отдел:</h4>
+          <p>8(84342) 5-69-79; e-mail: yulianiko@yandex.ru</p>
+        </div>
+      </div>
+      <div class="container__form">
+        <form action="action_page.php">
+          <label for="fname">Имя</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder=" Ваше имя..."
+          />
+
+          <label for="lname">Фамилия</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Ваша фамилия..."
+          />
+
+          <label for="subject">Соощение</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Текст сообщения..."
+            style="height:200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social">
+        <div class="social__icon">
+          <i class="fab fa-vk"></i>
+        </div>
+        <div class="social__icon">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="social__icon">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="social__icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="social__icon">
+          <i class="far fa-envelope-open"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

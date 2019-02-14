@@ -1,0 +1,107 @@
+.header__collections {
+  position: relative;
+
+  h1 {
+    z-index: 100;
+    color: white;
+  }
+}
+
+.collections {
+  z-index: 100;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  height: 400px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  display: flex;
+  box-shadow: 2px 2px 20px 10px rgba(255, 255, 255, 0.205);
+}
+
+.glider {
+  &__item {
+    @include flex;
+    height: 300px !important;
+    margin: 0 auto;
+
+    position: relative;
+    &:hover > img {
+      transform: scale(1.2);
+    }
+    &:hover > .glider__hover {
+      background: rgba(255, 255, 255, 0.5);
+      transform: scale(1.2);
+      display: flex;
+    }
+    button {
+      text-transform: uppercase;
+      padding: 10px 6px;
+      background: gray;
+      color: white;
+      font-size: 8px;
+      margin: 5px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: translateY(-2px);
+      }
+      &:active {
+        outline: none;
+        transform: translateY(0px);
+      }
+    }
+    img {
+      margin: 0 auto;
+      height: 250px;
+      transition: all 0.2s ease-in-out;
+    }
+    .glider__hover {
+      @include flex;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      display: none;
+
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.content {
+  a {
+    background: set-button-back-color(#fff);
+    color: set-button-text-color(#fff);
+  }
+  &__first {
+    display: flex;
+    margin-bottom: 50px;
+    min-height: 560px;
+  }
+  &__image {
+    width: 50%;
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+    background: rgba(85, 85, 85, 0.603);
+  }
+  &__info {
+
+    text-align: center;
+    width: 50%;
+    padding: 10%;
+  }
+  &__description {
+
+    width: 100%;
+    text-align: center;
+  }
+}
