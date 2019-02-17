@@ -890,6 +890,10 @@ footer .social__icon {
   width: 80%;
 }
 
+.collections .glider-contain .glider {
+  text-align: center;
+}
+
 .collections .glider-contain .glider__item {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -22,6 +22,7 @@
   .glider-contain {
     width: 80%;
     .glider {
+      text-align: center;
       &__item {
         @include flex;
         height: 300px !important;
