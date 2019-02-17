@@ -117,7 +117,7 @@ img {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 100;
+  z-index: 300;
   font-size: 24px;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ img {
   width: 100%;
   position: absolute;
   font-size: 14px;
-  z-index: 99;
+  z-index: 200;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -861,6 +861,12 @@ footer .social__icon {
           transform: translate(-50%, -50%);
   color: #f7f5f6;
   z-index: 100;
+}
+
+@media (max-width: 1024px) {
+  .header__collections .collections__title {
+    font-size: 18px;
+  }
 }
 
 .collections {
