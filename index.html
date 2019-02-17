@@ -12,126 +12,128 @@
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <img src="img/logo-small.png" alt="" />
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__logo">
+      <a href="index.html"><img src="img/logo-small.png" alt="" class="logo__img" /></a>
     </div>
-    <div class="navbar">
+    <div class="nav__ham">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav__bar">
       <ul>
-        <li class="nav-link"><a href="collections.html">Коллекция</a> </li>
-        <li class="nav-link"><a href="/catalogue">Каталог</a></li>
-        <li class="nav-link"><a href="about.html">О нас</a></li>
-        <li class="nav-link"><a href="contacts.html">Связаться</a></li>
+        <li class="nav-link"><a href="index.html" class="link active">Главная</a> </li>
+        <li class="nav-link"><a href="collections.html" class="link">Коллекция</a> </li>
+        <li class="nav-link"><a href="about.html" class="link">О нас</a></li>
+        <li class="nav-link"><a href="contacts.html" class="link">Связаться</a></li>
       </ul>
     </div>
   </nav>
-  <header>
-
+  <!-- Header -->
+  <header class="header__hero">
     <div class="hero">
       <div class="hero__image">
         <img src="img/vostok-new.png" alt="" />
       </div>
       <div class="hero__content">
         <div class="hero__headers">
-          <h2 class="hero__subtitle heading-two">
+          <h3 class="hero__subtitle heading-three">
             То, чего ждали многочисленные поклонники часов Восток, снова
             воплотилось в жизнь - в продаже новый выпуск часов
-          </h2>
+          </h3>
           <h1 class="hero__title heading-one">НЕПТУН-АМФИБИЯ</h1>
-          <button><a href="models">CLICK</a></button>
+          <button class="btn"><a href="collections.html" class="btn-link btn-link--lg">CLICK</a></button>
         </div>
       </div>
     </div>
   </header>
+  <!-- Section One -->
   <section class="overview">
-    <h2>Часы Восток</h2>
-    <p>
-      Чистопольский часовой завод "Восток" - лидер по количеству продаваемых механических часов среди всех часовых
-      марок, представленных в России. Завод основан в 1942 году. Товарный ассортимент насчитывает более 3 тысяч
-      наименований часов. Мы осуществляем оперативную и надежную доставку в любой город России. Никакой предооплаты.
-      Оплата при получении после проверки часов (*кроме посылок Почты России)
-    </p>
+    <div class="overview__content">
+      <h2 class="overview__title heading-two">Часы Восток</h2>
+      <p class="overview__text text-one">
+        Чистопольский часовой завод "Восток" - лидер по количеству продаваемых механических часов среди всех часовых
+        марок, представленных в России. Завод основан в 1942 году. Товарный ассортимент насчитывает более 3 тысяч
+        наименований часов. Мы осуществляем оперативную и надежную доставку в любой город России. Никакой предооплаты.
+        Оплата при получении после проверки часов (*кроме посылок Почты России)
+      </p>
+    </div>
   </section>
+  <!-- Section Two -->
   <section class="legacy">
     <div class="legacy__content">
-      <h2>История ЧЧЗ ВОСТОК</h2>
-      <p>
+      <h2 class="legacy__title heading-two">История ЧЧЗ ВОСТОК</h2>
+      <p class="legacy__text text-one">
         Начинает свою историю Чистопольский часовой завод «Восток» с ноября 1941 года, когда сюда эвакуировали
         оборудование и работников II Московского часового завода. В области, не имевшей, казалось бы, никаких условий
         для точного машиностроительного производства, уже в 1942 году полным ходом начался серийный выпуск часов
         военного назначения.
       </p>
-      <button><a href="models">CLICK</a></button>
+      <button class="btn"><a href="about.html" class="btn-link btn-link--lg">CLICK</a></button>
     </div>
     <div class="legacy__image">
       <img src="img/image-1.jpg" alt="" />
     </div>
   </section>
+  <!-- Section Three -->
   <section class="collection">
-    <h2>наша коллекция</h2>
+    <h2 class="collection__title heading-two">наша коллекция</h2>
     <div class="collection__list">
       <div class="collection__item">
         <img src="img/watch-1.png" alt="" />
-        <h3>Часы Амфибия мужские</h3>
-
-
+        <h3 class="item__title heading-three">Часы Амфибия мужские</h3>
       </div>
       <div class="collection__item">
-        <img src="img/watch-2.png" alt="" />
-        <h3>Командирские часы Восток</h3>
-
-
+        <img src="img/watch-2.png" alt="" class="collection__image" />
+        <h3 class="item__title heading-three">Командирские часы Восток</h3>
       </div>
       <div class="collection__item">
         <img src="img/watch-3.png" alt="" />
-        <h3>Восток Ретро К-43</h3>
-
-
+        <h3 class="item__title heading-three">Восток Ретро К-43</h3>
       </div>
-
       <div class="collection__item">
         <img src="img/watch-5.png" alt="" />
-        <h3>Кремлёвские, К-46, К-58</h3>
-
+        <h3 class="item__title heading-three">Кремлёвские, К-46, К-58</h3>
       </div>
     </div>
     </div>
-    <button><a href="models">вся коллекция</a></button>
+    <button class="btn"><a href="collection.html" class="btn-link btn-link--lg">CLICK</a></button>
   </section>
+  <!-- Section Four -->
   <section class="action">
     <div class="fullscreen-video">
-
       <video src="img/video-1.mp4" autoplay="true" loop="true" muted></video>
+
+      <button class="btn"><a href="contatcs.html" class="btn-link btn-link--lg" >CLICK</a></button>
     </div>
-    <div class="fullscreen-overlay"></div>
-    <button><a href="models">CLICK</a></button>
   </section>
+  <!-- Section Five -->
   <section class="service">
     <div class="service__item">
-      <h3> Сделано в России</h3>
-      <p>Лучшие цены на наручные часы Восток в Интернете</p>
-    </div>
-
-    <div class="service__item">
-      <h3>100% оригинал</h3>
-      <p>Прямые отгрузки с завода. Всегда "свежие" часы</p>
+      <h3 class="item__title heading-three">Сделано в России</h3>
+      <p class="service__text text-one">Лучшие цены на наручные часы Восток в Интернете</p>
     </div>
     <div class="service__item">
-      <h3>Сервисная поддержка
+      <h3 class="service__title heading-three">100% оригинал</h3>
+      <p class="service__text text-one">Прямые отгрузки с завода. Всегда "свежие" часы</p>
+    </div>
+    <div class="service__item">
+      <h3 class="service__title heading-three">Сервисная поддержка
       </h3>
-      <p>Гарантия 12 месяцев. Более 30 сервисных центров по России</p>
+      <p class="service__text text-one">Гарантия 12 месяцев. Более 30 сервисных центров по России</p>
     </div>
     <div class="service__item">
-      <h3>Без предооплаты
-
+      <h3 class="service__title heading-three">Без предооплаты
       </h3>
-      <p>Полная оплата при получении после осмотра часов *кроме почты РФ</p>
+      <p class="service__text text-one">Полная оплата при получении после осмотра часов *кроме почты РФ</p>
     </div>
     <div class="service__item">
-      <h3>Удобная доставка</h3>
-      <p>Быстрая доставка по всей России: курьером или в пункты выдачи заказов СДЭК и Boxberry</p>
+      <h3 class="service__title heading-three">Удобная доставка</h3>
+      <p class="service__text text-one">Быстрая доставка по всей России: курьером или в пункты выдачи заказов СДЭК и
+        Boxberry</p>
     </div>
   </section>
+  <!-- Footer -->
   <footer>
     <div class="social">
       <div class="social__icon">
@@ -148,7 +150,6 @@
       </div>
       <div class="social__icon">
         <i class="far fa-envelope-open"></i>
-
       </div>
     </div>
   </footer>

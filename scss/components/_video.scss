@@ -1,0 +1,10 @@
+.fullscreen-video {
+  position: relative;
+  width: 100%;
+  video {
+    width: 100%;
+  }
+  &::after {
+    @include cover;
+  }
+}

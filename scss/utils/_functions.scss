@@ -1,0 +1,16 @@
+@function set-button-text-color($color) {
+  @if (lightness($color) < 50) {
+    @return $text-color-one; // Lighter backgorund, return dark color
+  } @else {
+    @return $text-color-two; // Darker background, return light color
+  }
+}
+
+@function set-button-back-color($color) {
+  @if (lightness($color) > 50) {
+    @return $text-color-one
+    ; // Lighter backgorund, return dark color
+  } @else {
+    @return $text-color-two; // Darker background, return light color
+  }
+}

@@ -15,43 +15,61 @@
   </head>
 
   <body>
-    <nav>
-      <div class="logo">
-        <img src="img/logo-small.png" alt="" />
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="index.html"
+          ><img src="img/logo-small.png" alt="" class="logo__img"
+        /></a>
       </div>
-      <div class="navbar">
+      <div class="nav__ham">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav__bar">
         <ul>
-          <li class="nav-link"><a href="collections.html">Коллекция</a></li>
-          <li class="nav-link"><a href="/catalogue">Каталог</a></li>
-          <li class="nav-link"><a href="about.html">О нас</a></li>
-          <li class="nav-link"><a href="contacts.html">Связаться</a></li>
+          <li class="nav-link">
+            <a href="index.html" class="link active">Главная</a>
+          </li>
+          <li class="nav-link">
+            <a href="collections.html" class="link">Коллекция</a>
+          </li>
+          <li class="nav-link"><a href="about.html" class="link">О нас</a></li>
+          <li class="nav-link">
+            <a href="contacts.html" class="link">Связаться</a>
+          </li>
         </ul>
       </div>
     </nav>
+    <!-- Header -->
     <header class="header__contacts">
-      <div class="fullscreen-image">
+      <div class="contacts__image">
         <img src="img/header-image-2.jpg" alt="" />
       </div>
-      <div class="fullscreen-overlay"></div>
-      <h1>Связаться с нами</h1>
+      <h1 class="contacts__title heading-one">Связаться с нами</h1>
     </header>
 
     <section class="section__form">
       <div class="container__address">
         <div class="container__field">
-          <h3>Адрес: 422981, РТ, г.Чистополь, ул.Энгельса, 129Т, Н-2</h3>
+          <h3 class="heading-three">
+            Адрес: 422981, РТ, г.Чистополь, ул.Энгельса, 129Т, Н-2
+          </h3>
 
-          <h4>Приемная:</h4>
-          <p>8(84342) 9-00-00; e-mail: zavod-vostok@mail.ru</p>
+          <h3 class="heading-three">Приемная:</h3>
+          <p class="text-one">8(84342) 9-00-00; e-mail: zavod-vostok@mail.ru</p>
 
-          <h4>Отдел продаж:</h4>
-          <p>8(84342) 9-00-05; e-mail: rch5@mail.ru и rch6@mail.ru</p>
-          <h4>Отдел снабжения:</h4>
-          <p>8(84342) 4-40-79</p>
-          <h4>Гарантийная мастерская:</h4>
-          <p>8(84342) 9-00-15; e-mail: garant-vostok@inbox.ru</p>
-          <h4>Конструкторско-технологический отдел:</h4>
-          <p>8(84342) 5-69-79; e-mail: yulianiko@yandex.ru</p>
+          <h3 class="heading-three">Отдел продаж:</h3>
+          <p class="text-one">
+            8(84342) 9-00-05; e-mail: rch5@mail.ru и rch6@mail.ru
+          </p>
+          <h3 class="heading-three">Отдел снабжения:</h3>
+          <p class="text-one">8(84342) 4-40-79</p>
+          <h3 class="heading-three">Гарантийная мастерская:</h3>
+          <p class="text-one">
+            8(84342) 9-00-15; e-mail: garant-vostok@inbox.ru
+          </p>
+          <h3 class="heading-three">Конструкторско-технологический отдел:</h3>
+          <p class="text-one">8(84342) 5-69-79; e-mail: yulianiko@yandex.ru</p>
         </div>
       </div>
       <div class="container__form">
@@ -80,7 +98,7 @@
             style="height:200px"
           ></textarea>
 
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" class="btn btn-link--lg" />
         </form>
       </div>
     </section>

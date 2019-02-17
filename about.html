@@ -15,38 +15,51 @@
   </head>
 
   <body>
-    <nav>
-      <div class="logo">
-        <img src="img/logo-small.png" alt="" />
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="index.html"
+          ><img src="img/logo-small.png" alt="" class="logo__img"
+        /></a>
       </div>
-      <div class="navbar">
+      <div class="nav__ham">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav__bar">
         <ul>
-          <li class="nav-link"><a href="collections.html">Коллекция</a></li>
-          <li class="nav-link"><a href="/catalogue">Каталог</a></li>
-          <li class="nav-link"><a href="about.html">О нас</a></li>
-          <li class="nav-link"><a href="contacts.html">Связаться</a></li>
+          <li class="nav-link">
+            <a href="index.html" class="link active">Главная</a>
+          </li>
+          <li class="nav-link">
+            <a href="collections.html" class="link">Коллекция</a>
+          </li>
+          <li class="nav-link"><a href="about.html" class="link">О нас</a></li>
+          <li class="nav-link">
+            <a href="contacts.html" class="link">Связаться</a>
+          </li>
         </ul>
       </div>
     </nav>
+    <!-- Header -->
     <header class="header__about">
-      <div class="fullscreen-image">
+      <div class="about__image">
         <img src="img/main-banner-bg.png" alt="" />
       </div>
-      <div class="fullscreen-overlay"></div>
-      <h1>О компании</h1>
+      <h1 class="about__title heading-one">О компании</h1>
     </header>
+    <!-- Section -->
     <div class="timeline">
       <div class="container">
         <div class="year">
           <div class="inner">
-            <span>История</span>
+            <h2 class="timeline__title heading-two">История</h2>
           </div>
         </div>
 
         <ul class="days">
           <li class="day">
             <div class="events">
-              <p>
+              <p class="events__text text-one">
                 Свою историю Чистопольское часовое производство ведет с осени
                 1941 года. Эвакуированный завод прибывал по Казанской железной
                 дороге, водным и воздушным транспортом. Оборудование второго
@@ -65,7 +78,7 @@
 
           <li class="day">
             <div class="events">
-              <p>
+              <p class="events__text text-one">
                 С 1965 года Чистопольский часовой завод "Восток" стал
                 официальным поставщиком часов для Министерства обороны. Часы
                 "Командирские", как стали называться эти хронометры, сразу же
@@ -87,7 +100,7 @@
 
           <li class="day">
             <div class="events">
-              <p>
+              <p class="events__text text-one">
                 В 1967 году специально по заказу ВМФ СССР на Чистопольском
                 часовом заводе «Восток» были изготовлены первые часы «Амфибия»,
                 ставшие знаковым предметом того времени. Часы «Амфибия»
@@ -99,7 +112,7 @@
 
           <li class="day">
             <div class="events">
-              <p>
+              <p class="events__text text-one">
                 В 1975 году часы «Амфибия» побывали в космосе в первой
                 экспедиции на космическую станцию «Салют-4» на космическом
                 корабле «Союз -17». Часы входили в состав экипировки
@@ -121,7 +134,7 @@
 
           <li class="day">
             <div class="events">
-              <p>
+              <p class="events__text text-one">
                 В 1980 году заводом выпущено самое большое количество наручных
                 часов -4,5 млн. штук. Вся продукция только первой и высшей
                 категорий качества. Большие партии часов экспортируются в
@@ -132,7 +145,7 @@
           </li>
           <li class="day">
             <div class="events">
-              <p>
+              <p class="events__text text-one">
                 В 1996 году совместно с американской фирмой "Capital Trading"
                 было положено начало производству часов нового поколения.
                 Интерпретация традиционных линий чистопольских часов в русле
@@ -148,14 +161,14 @@
 
         <div class="year year--end">
           <div class="inner">
-            <span>XXI век</span>
+            <h2 class="timeline__title heading-two">XXI век</h2>
           </div>
         </div>
       </div>
     </div>
     <section class="history__end">
       <div class="container">
-        <p>
+        <p class="events__text text-one">
           Сегодня ЗАО ЧЧЗ «Восток» — единственный в России часовой завод,
           имеющий полный (замкнутый) цикл производства часовых механизмов и
           механических наручных часов. Отличительной особенностью изделий марки

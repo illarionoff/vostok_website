@@ -1,0 +1,215 @@
+.header__about {
+  &::after {
+    @include cover;
+  }
+  .about__image {
+    position: relative;
+    height: 100%;
+  }
+  .about__title {
+    @include absolute_center;
+    color: $text-color-three;
+    z-index: 100;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.timeline {
+  text-align: center;
+  .year {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+    .timeline__title {
+      display: inline-block;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 80%;
+      margin: auto;
+      height: 1px;
+      background: gray;
+    }
+    &--end {
+      &:before {
+        content: "";
+        display: block;
+        width: 80%;
+        margin: auto;
+        height: 1px;
+        background: gray;
+      }
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  .days {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    .day {
+      width: 100%;
+      float: left;
+      .events {
+        position: relative;
+        float: left;
+        border-right: 1px solid gray;
+        padding: 30px;
+        text-align: right;
+        width: 50%;
+        &:after {
+          content: "";
+          width: 40%;
+          display: inline-block;
+          height: 1px;
+          background: gray;
+
+          position: absolute;
+          right: 0;
+        }
+        .date {
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translateY(-50%);
+          padding: 10px;
+          text-align: left;
+          color: gray;
+          font-size: 24px;
+          white-space: nowrap;
+          @media (max-width: 1024px) {
+            font-size: 18px;
+          }
+        }
+        .day__img {
+          margin-right: -30px;
+          position: relative;
+          overflow: hidden;
+          img {
+            display: block;
+            float: right;
+            width: 100%;
+          }
+          .caption {
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(#000, 0.7);
+            color: #fff;
+          }
+        }
+      }
+
+      @media (max-width: 1024px) {
+        &:nth-child(odd) {
+          .events {
+            width: calc(90% + 1px);
+            float: right;
+            border-right: 0;
+            border-left: 1px solid gray;
+            text-align: left;
+            &:after {
+              right: auto;
+              left: 0;
+            }
+            .date {
+              left: auto;
+              right: 100%;
+              text-align: right;
+            }
+            .day__img {
+              margin-right: auto;
+              margin-left: -30px;
+              img {
+                float: left;
+              }
+              .caption {
+                right: auto;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .events {
+          @media (max-width: 1024px) {
+            width: calc(90% + 1px);
+          }
+          width: calc(50% + 1px);
+          float: right;
+          border-right: 0;
+          border-left: 1px solid gray;
+          text-align: left;
+          &:after {
+            right: auto;
+            left: 0;
+          }
+          .date {
+            left: auto;
+            right: 100%;
+            text-align: right;
+          }
+          .day__img {
+            margin-right: auto;
+            margin-left: -30px;
+            img {
+              float: left;
+            }
+            .caption {
+              right: auto;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      .events {
+        width: calc(50% + 1px);
+        float: right;
+        border-right: 0;
+        border-left: 1px solid gray;
+        text-align: left;
+        &:after {
+          right: auto;
+          left: 0;
+        }
+        .date {
+          left: auto;
+          right: 100%;
+          text-align: right;
+        }
+        .day__img {
+          margin-right: auto;
+          margin-left: -30px;
+          img {
+            float: left;
+          }
+          .caption {
+            right: auto;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.history__end {
+  text-align: center;
+}
